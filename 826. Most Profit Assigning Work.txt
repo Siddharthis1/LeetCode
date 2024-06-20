@@ -10,7 +10,7 @@ class Solution {
         {
             maxProfits[difficulty[i]]= Math.max(maxProfits[difficulty[i]], profit[i]);
         }
-        for(int i = 1;i<=max ;i++){
+        for(int i = 1;i<=max ; i ++ ){
             maxProfits [i]=Math.max(maxProfits[i], maxProfits[i-1]);
         }
         int money = 0;
